@@ -6,6 +6,8 @@ profile: "prod"
 
 cloudPlatform: ""
 
+licenseKey: ouOA/Zp/0+rS5r3NejN1KwSoIcxQUFOyHDN9GD15yw61TUcJgq9d1gnfhdK4UB15IvE1tnokdfi/vKOvpZfxUbT0AzAfXJqZfXk7gZmzxDIXoCi0NITGLkX5WsUfWT0YqmNu3JdcBCr+WcW+ZpNyJasFRxidf8ub7xbS1W9Q+ezsg5pxmSDVyxZ+bs5dQF40RhsW7+qa/Z2r9/aB3Nv6dGztH4jwuwZG1lL0sHXOsFAPOaKkt2q1cPd2wBZRY2rTzBvNkUimBHn4zVuJpH+Rk4RzQuaPjZFcZvsTARHTNgNkBysHNdBMsFrOas5iHcgE4h9mHU6bjXZ7DPduCQT8hoXMMo/90GGX8kteJKTe8+mIY4waajub+1RIrkPq6+xK
+
 namespace:
 
 replicaCount: 1
@@ -21,8 +23,8 @@ image:
     registry: ghcr.io
     name: image-pull-secret
     create: false
-    username:
-    password:
+    username: <enter-username>
+    password: <enter-password>
 
 rbac:
   create: true
@@ -71,10 +73,6 @@ kyverno:
         # -- Extra resource permissions to add in the cluster role
         extraResources: []
 
-  nameOverride: "kyverno"
-  fullnameOverride: "kyverno"
-  namespace: kyverno
-
   # -- Additional resources to be added to kyverno controller RBAC permissions.
   generatecontrollerExtraResources: []
   image:
@@ -83,66 +81,13 @@ kyverno:
     # -- Image tag
     tag: v1.9.5-n4k.nirmata.4
 
-  # -- Override default exclude namespaces (default kyverno, kube-system, nirmata, nirmata-system )
-  excludedNamespacesForWebhook: []
-
   # Kyverno Helm Chart customizations other than those already in kyverno CR
   helm:
+    resources:
+      # -- Pod resource limits
+      limits:
+        memory: 1Gi #1Gi
 
-policies:
-  chartRepoUsername:
-  policySets:
-
-awsAdapter:
-  createCR: false
-  namespace: kyverno-aws-adapter
-  replicas: 1
-  image:
-    repository: ghcr.io/nirmata/kyverno-aws-adapter
-    tag: v0.3.0
-  rbac:
-    create: false
-    serviceAccount:
-      name:
-  roleArn:
-  nameOverride: "kyverno-aws-adapter"
-  fullnameOverride: "kyverno-aws-adapter"
-  eksCluster:
-    name:
-    region:
-
-imageScanAdapter:
-  createCR: false
-  namespace: image-scan-adapter
-  replicas: 1
-  image:
-    repository: ghcr.io/nirmata/image-scan-adapter
-    tag: v0.1.0
-  rbac:
-    create: false
-    serviceAccount:
-      name:
-  roleArn:
-  nameOverride: "image-scan-adapter"
-  fullnameOverride: "image-scan-adapter"
-
-cisAdapter:
-  createCR: false
-  namespace: cis-adapter
-  replicas: 1
-  image:
-    repository: ghcr.io/nirmata/kube-bench-adapter
-    tag: v0.2.1
-  rbac:
-    create: false
-  serviceAccount:
-    create: false
-    name:
-  nameOverride: "cis-adapter"
-  fullnameOverride: "cis-adapter"
-  helm:
-    cronjob:
-      schedule: '"@weekly"'
 
 # Items after this are general chart parameters. Set/Modify as per need.
 imagePullSecrets: []
