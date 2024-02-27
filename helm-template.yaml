@@ -5,13 +5,13 @@ kind: Namespace
 metadata:
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: kyverno
 ---
 # Source: enterprise-kyverno-operator/templates/kyverno-1.9/cleanup-controller/serviceaccount.yaml
@@ -21,9 +21,9 @@ metadata:
   name: kyverno-cleanup-controller
   labels:
     app.kubernetes.io/part-of: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app.kubernetes.io/component: cleanup-controller
     app.kubernetes.io/name: kyverno-cleanup-controller
     app.kubernetes.io/instance: enterprise-kyverno-operator
@@ -36,13 +36,13 @@ metadata:
   name: kyverno
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
   namespace: kyverno
 ---
@@ -59,7 +59,7 @@ kind: Secret
 metadata:
   name: operator-params
   labels:
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/name: enterprise-kyverno-operator
     app.kubernetes.io/instance: enterprise-kyverno-operator
     control-plane: enterprise-kyverno-operator-controller-manager
@@ -76,7 +76,7 @@ kind: Secret
 metadata:
   name: webhook-server-cert
   labels:
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/name: enterprise-kyverno-operator
     app.kubernetes.io/instance: enterprise-kyverno-operator
     control-plane: enterprise-kyverno-operator-controller-manager
@@ -111,13 +111,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: admissionreports.kyverno.io
 spec:
   group: kyverno.io
@@ -461,13 +461,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: backgroundscanreports.kyverno.io
 spec:
   group: kyverno.io
@@ -771,13 +771,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: cleanuppolicies.kyverno.io
 spec:
   group: kyverno.io
@@ -1824,13 +1824,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: clusteradmissionreports.kyverno.io
 spec:
   group: kyverno.io
@@ -2175,13 +2175,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: clusterbackgroundscanreports.kyverno.io
 spec:
   group: kyverno.io
@@ -2485,13 +2485,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: clustercleanuppolicies.kyverno.io
 spec:
   group: kyverno.io
@@ -3538,13 +3538,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: clusterpolicies.kyverno.io
 spec:
   group: kyverno.io
@@ -16023,13 +16023,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: generaterequests.kyverno.io
 spec:
   group: kyverno.io
@@ -16216,13 +16216,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: policies.kyverno.io
 spec:
   group: kyverno.io
@@ -28704,13 +28704,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: policyexceptions.kyverno.io
 spec:
   group: kyverno.io
@@ -29196,13 +29196,13 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.11.1
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: updaterequests.kyverno.io
 spec:
   group: kyverno.io
@@ -29711,13 +29711,13 @@ metadata:
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
     app: kyverno
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
 rules:
 - apiGroups:
   - kyverno.io
@@ -29740,13 +29740,13 @@ metadata:
   labels:
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: kyverno:admin-policyreport
 rules:
   - apiGroups:
@@ -29770,13 +29770,13 @@ metadata:
   labels:
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: kyverno:admin-reports
 rules:
 - apiGroups:
@@ -29802,13 +29802,13 @@ metadata:
   labels:
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: kyverno:admin-generaterequest
 rules:
 - apiGroups:
@@ -29831,13 +29831,13 @@ metadata:
   labels:
     rbac.authorization.k8s.io/aggregate-to-admin: "true"
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
   name: kyverno:admin-updaterequest
 rules:
 - apiGroups:
@@ -29860,9 +29860,9 @@ metadata:
   name: enterprise-kyverno-operator:cleanup-controller
   labels:
     app.kubernetes.io/part-of: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app.kubernetes.io/component: cleanup-controller
     app.kubernetes.io/name: kyverno-cleanup-controller
     app.kubernetes.io/instance: enterprise-kyverno-operator
@@ -29880,9 +29880,9 @@ metadata:
   name: enterprise-kyverno-operator:cleanup-controller:core
   labels:
     app.kubernetes.io/part-of: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app.kubernetes.io/component: cleanup-controller
     app.kubernetes.io/name: kyverno-cleanup-controller
     app.kubernetes.io/instance: enterprise-kyverno-operator
@@ -29948,13 +29948,13 @@ metadata:
   name: kyverno
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 aggregationRule:
   clusterRoleSelectors:
@@ -29970,13 +29970,13 @@ metadata:
   name: kyverno:userinfo
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 rules:
 - apiGroups:
@@ -29997,13 +29997,13 @@ metadata:
   name: kyverno:policies
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 rules:
 - apiGroups:
@@ -30054,13 +30054,13 @@ metadata:
   name: kyverno:view
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 rules:
 - apiGroups:
@@ -30079,13 +30079,13 @@ metadata:
   name: kyverno:generate
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 rules:
   - apiGroups:
@@ -30130,13 +30130,13 @@ metadata:
   name: kyverno:events
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 rules:
 - apiGroups:
@@ -30157,13 +30157,13 @@ metadata:
   name: kyverno:webhook
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 rules:
 - apiGroups:
@@ -30202,9 +30202,9 @@ metadata:
   name: enterprise-kyverno-operator:cleanup-controller
   labels:
     app.kubernetes.io/part-of: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app.kubernetes.io/component: cleanup-controller
     app.kubernetes.io/name: kyverno-cleanup-controller
     app.kubernetes.io/instance: enterprise-kyverno-operator
@@ -30224,13 +30224,13 @@ metadata:
   name: kyverno
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -30248,9 +30248,9 @@ metadata:
   name: enterprise-kyverno-operator:cleanup-controller
   labels:
     app.kubernetes.io/part-of: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app.kubernetes.io/component: cleanup-controller
     app.kubernetes.io/name: kyverno-cleanup-controller
     app.kubernetes.io/instance: enterprise-kyverno-operator
@@ -30304,13 +30304,13 @@ metadata:
   namespace: kyverno
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 rules:
 - apiGroups:
@@ -30371,9 +30371,9 @@ metadata:
   name: enterprise-kyverno-operator:cleanup-controller
   labels:
     app.kubernetes.io/part-of: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app.kubernetes.io/component: cleanup-controller
     app.kubernetes.io/name: kyverno-cleanup-controller
     app.kubernetes.io/instance: enterprise-kyverno-operator
@@ -30410,13 +30410,13 @@ metadata:
   namespace: kyverno
   labels:
     app.kubernetes.io/component: kyverno
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/managed-by: Helm
     
     app.kubernetes.io/name: kyverno
     app.kubernetes.io/instance: enterprise-kyverno-operator
     app.kubernetes.io/part-of: kyverno
-    app.kubernetes.io/version: v0.2.41
+    app.kubernetes.io/version: v0.2.42
     app: kyverno
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -30464,7 +30464,7 @@ metadata:
   name: enterprise-kyverno-operator
   namespace: enterprise-kyverno-operator
   labels:
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/name: enterprise-kyverno-operator
     app.kubernetes.io/instance: enterprise-kyverno-operator
     control-plane: enterprise-kyverno-operator-controller-manager
@@ -30486,7 +30486,7 @@ kind: Deployment
 metadata:
   name: enterprise-kyverno-operator
   labels:
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/name: enterprise-kyverno-operator
     app.kubernetes.io/instance: enterprise-kyverno-operator
     control-plane: enterprise-kyverno-operator-controller-manager
@@ -30585,7 +30585,7 @@ kind: Kyverno
 metadata:
   annotations:
   labels:
-    helm.sh/chart: enterprise-kyverno-operator-v0.2.41
+    helm.sh/chart: enterprise-kyverno-operator-v0.2.42
     app.kubernetes.io/name: enterprise-kyverno-operator
     app.kubernetes.io/instance: enterprise-kyverno-operator
     control-plane: enterprise-kyverno-operator-controller-manager
@@ -30594,7 +30594,6 @@ metadata:
   name: kyverno
   namespace: enterprise-kyverno-operator
 spec:
-  secrets: operator-params
   namespace: kyverno
   repository: ghcr.io/nirmata/kyverno
   version: v1.9.5-n4k.nirmata.4
@@ -30695,69 +30694,3 @@ webhooks:
     resources:
     - kyvernoes
   sideEffects: None
----
-# # Source: enterprise-kyverno-operator/templates/pre-delete-hook.yaml
-# apiVersion: batch/v1
-# kind: Job
-# metadata:
-#   name: enterprise-kyverno-operator-operator-cleanup
-#   namespace: enterprise-kyverno-operator
-#   annotations:
-#     "helm.sh/hook": pre-delete
-#     "helm.sh/hook-weight": "3"
-#     "helm.sh/hook-delete-policy": hook-succeeded
-#   labels:
-#     app: enterprise-kyverno-operator-operator
-#     helm.sh/chart: enterprise-kyverno-operator-v0.2.41
-#     app.kubernetes.io/name: enterprise-kyverno-operator
-#     app.kubernetes.io/instance: enterprise-kyverno-operator
-#     control-plane: enterprise-kyverno-operator-controller-manager
-#     app.kubernetes.io/version: "v0.1.18"
-#     app.kubernetes.io/managed-by: Helm
-# spec:
-#   template:
-#     metadata:
-#       name: enterprise-kyverno-operator-operator-cleanup
-#       labels:
-#         app: enterprise-kyverno-operator-operator
-#         helm.sh/chart: enterprise-kyverno-operator-v0.2.41
-#         app.kubernetes.io/name: enterprise-kyverno-operator
-#         app.kubernetes.io/instance: enterprise-kyverno-operator
-#         control-plane: enterprise-kyverno-operator-controller-manager
-#         app.kubernetes.io/version: "v0.1.18"
-#         app.kubernetes.io/managed-by: Helm
-#     spec:
-#       imagePullSecrets: 
-#       - name: image-pull-secret
-#       serviceAccountName: enterprise-kyverno-operator
-#       securityContext:
-#         runAsUser: 1000
-#         runAsGroup: 3000
-#         runAsNonRoot: true
-#         seccompProfile:
-#           type: RuntimeDefault
-#       containers:
-#         - name: kubectl
-#           image: ghcr.io/nirmata/kubectl:1.24
-#           imagePullPolicy: IfNotPresent
-#           command:
-#           - /bin/sh
-#           - -c
-#           - >
-#               for i in [] ; 
-#               do 
-#                 kubectl -n enterprise-kyverno-operator delete PolicySet $i;
-#               done;
-#               kubectl -n enterprise-kyverno-operator delete kyvernoes kyverno;
-#               sleep 10;
-#           securityContext:
-#             allowPrivilegeEscalation: false
-#             capabilities:
-#               drop:
-#               - ALL
-#               - CAP_NET_RAW
-#             readOnlyRootFilesystem: true
-#           resources:
-#             limits:
-#               memory: 128Mi
-#       restartPolicy: OnFailure
