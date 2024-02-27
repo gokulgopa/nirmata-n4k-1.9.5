@@ -30594,8 +30594,7 @@ metadata:
   name: kyverno
   namespace: enterprise-kyverno-operator
 spec:
-  secrets:
-  
+  secrets: operator-params
   namespace: kyverno
   repository: ghcr.io/nirmata/kyverno
   version: v1.9.5-n4k.nirmata.4
